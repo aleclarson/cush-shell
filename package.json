@@ -1,0 +1,37 @@
+{
+  "name": "@cush/shell",
+  "version": "1.0.0",
+  "description": "Throwaway shell scripts",
+  "author": "Alec Larson",
+  "license": "MIT",
+  "repository": "aleclarson/cush-shell",
+  "main": "dist/cush-shell.js",
+  "types": "dist/cush-shell.d.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "yarn build"
+  },
+  "devDependencies": {
+    "@alloc/prettier-config": "^1.0.0",
+    "@types/dedent": "^0.7.0",
+    "esbuild": "^0.8.36",
+    "prettier": "^2.0.5",
+    "rollup": "^2.38.1",
+    "rollup-plugin-dts": "^2.0.1",
+    "rollup-plugin-esbuild": "^2.6.1",
+    "typescript": "^4.0.0"
+  },
+  "prettier": "@alloc/prettier-config",
+  "dependencies": {
+    "@cush/exec": "^1.7.1",
+    "@types/node": "^14.14.37",
+    "dedent": "^0.7.0",
+    "exit-hook": "^2.2.1",
+    "md5-hex": "^3.0.1",
+    "saxon": "^0.2.11"
+  }
+}
